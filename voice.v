@@ -74,7 +74,7 @@ begin
 if(freq==20'hfffff)
 freq <= 14'b11111111111111;
 else
-freq <= freq+1'b1;
+freq <= freq+20'b1;
 end
  
   
