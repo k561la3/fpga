@@ -64,7 +64,7 @@ module top
         .reset_n ( BTN[0]),
         .out     ( note_c4   )
     );
-always @ (posedge clk)
+always @ (posedge clock )
 begin
 clkreduce <= clkreduce + 9'b1;
 end
