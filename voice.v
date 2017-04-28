@@ -42,6 +42,7 @@ endmodule
 
 module top
 (
+    input  [1:0]  BTN,
     input         CLK,         // Тактовый сигнал 12 MHz
     inout  [48:1] pio          // GPIO, General-Purpose Input/Output
 );
@@ -60,7 +61,7 @@ module top
     )
     (
         .clock   ( clock     ),
-        .reset_n ( button_c4 ),
+        .reset_n ( BTN[0]),
         .out     ( note_c4   )
     );
 always @ (posedge clk)
