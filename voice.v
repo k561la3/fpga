@@ -81,26 +81,3 @@ end
     assign pio [48]   = note_c4;
 
 endmodule
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
